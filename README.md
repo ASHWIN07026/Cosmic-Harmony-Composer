@@ -6,7 +6,26 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![No API Keys Required](https://img.shields.io/badge/No%20API%20Keys-Required-brightgreen)](.)
 
-> **AI music generator using an LSTM neural network** — trained and run entirely **locally** with no external APIs, no API keys, and no internet dependency for generation.
+---
+
+<div align="center">
+
+## ✨ AI Music Generator with LSTM Neural Networks ✨
+
+**Trained and run entirely locally — No external APIs, no API keys, no internet dependency**
+
+```
+    ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫
+    
+         🌟 Cosmic Harmony Composer 🌟
+         
+         Generate Original Space-Themed Music
+         With Deep Learning • Fully Offline • Open Source
+         
+    ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫  ♪  ♫
+```
+
+</div>
 
 ---
 
@@ -35,29 +54,65 @@ Unlike ChatGPT, Claude, or Google's music APIs, **Cosmic Harmony Composer is a t
 
 ---
 
-## 🖥️ How It Works
+## 🖥️ Dashboard Preview
 
 ```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                    FULLY LOCAL PIPELINE — NO INTERNET                    │
-└──────────────────────────────────────────────────────────────────────────┘
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     🎵 Cosmic Harmony Composer 🎵                          ║
+║                          Training Dashboard                                ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  🧠 MODEL TRAINING                  ✨ GENERATE SYMPHONY                  ║
+║  ─────────────────────────          ──────────────────────               ║
+║  Status: In Progress                Notes: 250 selected                  ║
+║                                                                            ║
+║  ████████░░ 75%                     [●───────────────────] Range         ║
+║  Loss: 0.312                        50 to 500 notes                      ║
+║  Elapsed: 41s                                                             ║
+║                                                                            ║
+║  ┌─────────────────────────────────────────────────────────────────────┐ ║
+║  │ 🎵 GENERATED COMPOSITIONS                                          │ ║
+║  ├─────────────────────────────────────────────────────────────────────┤ ║
+║  │ 📄 nebula_dreams_2024.mid                                          │ ║
+║  │    250 notes • 0:48 duration • 4.2 KB                              │ ║
+║  │                                                                     │ ║
+║  │ 📄 black_hole_mystery_2024.mid                                     │ ║
+║  │    320 notes • 1:02 duration • 5.1 KB                              │ ║
+║  │                                                                     │ ║
+║  │                            [⬇ Download MIDI Files]                 │ ║
+║  └─────────────────────────────────────────────────────────────────────┘ ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+```
 
-    🎼                  🧠                  ✨                  🪐
-  Note Corpus    →   LSTM Training   →   Generate Notes   →   MIDI Export
-    
-   Sample cosmic      2 layers × 128       50–500 new        via music21
-   melodies or        units each           sampled notes     cosmic names
-   your MIDI files    30-60 sec (CPU)      in real-time      ready to play
+---
 
-                              ↓
+## ⚙️ How It Works
 
-                    Flask Backend (Server)
-                    TensorFlow/Keras (Model)
-                    Music21 (MIDI Generation)
-                    HTML/CSS/JS (Frontend)
+```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                  FULLY LOCAL PIPELINE — NO INTERNET REQUIRED             ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+         🎼                    🧠                    ✨                    🪐
+      NOTE CORPUS      →   LSTM TRAINING    →   GENERATE NOTES   →   MIDI EXPORT
+      
+    Sample cosmic           2 layers × 128         50–500 new          via music21
+    melodies or             units each             sampled notes       cosmic names
+    your MIDI files         30-60 sec (CPU)        in real-time        ready to play
+
+
+                                      ↓
                     
-              Everything runs on your machine!
-              No API keys • No external calls • Completely offline
+                    ┌─────────────────────────────┐
+                    │   Flask Backend (Server)    │
+                    │  TensorFlow/Keras (Model)   │
+                    │  Music21 (MIDI Generation)  │
+                    │  HTML/CSS/JS (Frontend)     │
+                    └─────────────────────────────┘
+                    
+                      Everything runs on your machine!
+                   No API keys • No external calls • Completely offline
 ```
 
 ---
@@ -159,16 +214,16 @@ cosmic-harmony-composer/
 ## 🛠️ Tech Stack
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    TECH STACK                           │
-├─────────────────────────────────────────────────────────┤
-│ Backend:     Flask (lightweight web framework)          │
-│ Deep Learning: TensorFlow/Keras (LSTM neural network)   │
-│ Music:       Music21 (MIDI generation & manipulation)   │
-│ Frontend:    HTML5 + CSS3 + Vanilla JavaScript          │
-│ Model:       2-layer LSTM, 128 units each              │
-│ Training:    30-60 seconds on CPU                       │
-└─────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                       TECH STACK                             │
+├──────────────────────────────────────────────────────────────┤
+│  Backend:         Flask (lightweight web framework)          │
+│  Deep Learning:   TensorFlow/Keras (LSTM neural network)     │
+│  Music:           Music21 (MIDI generation & manipulation)   │
+│  Frontend:        HTML5 + CSS3 + Vanilla JavaScript          │
+│  Model:           2-layer LSTM, 128 units each               │
+│  Training:        30-60 seconds on CPU                       │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ---
